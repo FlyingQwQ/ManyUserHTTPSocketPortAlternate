@@ -53,7 +53,7 @@ class dataThread extends Thread {
 		sbhtml.append("<title>Connect Error!</title>");
 		sbhtml.append("</html>");
 		sbhtml.append("<body>");
-		sbhtml.append("<p>µØÖ·£º" + this.socket.getInetAddress().getHostAddress() + " ÎŞ·¨Á¬½ÓÖÁÄ¿±ê·şÎñ£¡</p>");
+		sbhtml.append("<p>åœ°å€ï¼š" + this.socket.getInetAddress().getHostAddress() + " æ— æ³•è¿æ¥è‡³ç›®æ ‡æœåŠ¡ï¼</p>");
 		sbhtml.append("</body>");
 		sbhtml.append("</html>");
 		
@@ -96,7 +96,7 @@ class dataThread extends Thread {
 			this.WebSocket.getOutputStream().flush();
 			
 		}catch(SocketException e) {
-			System.out.println("[*] Ä¿±ê·şÎñÒì³£¶Ï¿ª£¡");
+			System.out.println("[*] ç›®æ ‡æœåŠ¡å¼‚å¸¸æ–­å¼€ï¼");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
